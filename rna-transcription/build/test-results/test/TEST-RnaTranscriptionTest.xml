@@ -1,11 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RnaTranscriptionTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2018-08-16T15:23:16" hostname="Rafaels-MacBook-Air.local" time="0.014">
+<testsuite name="RnaTranscriptionTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2018-08-16T15:32:41" hostname="Rafaels-MacBook-Air.local" time="0.027">
   <properties/>
-  <testcase name="testRnaTranscriptionOfThymineIsAdenine" classname="RnaTranscriptionTest" time="0.01"/>
-  <testcase name="testRnaTranscription" classname="RnaTranscriptionTest" time="0.001"/>
+  <testcase name="testRnaTranscriptionOfThymineIsAdenine" classname="RnaTranscriptionTest" time="0.019"/>
+  <testcase name="testRnaTranscription" classname="RnaTranscriptionTest" time="0.003"/>
   <testcase name="testRnaTranscriptionOfCytosineIsGuanine" classname="RnaTranscriptionTest" time="0.0"/>
   <testcase name="testRnaTranscriptionOfGuanineIsCytosine" classname="RnaTranscriptionTest" time="0.0"/>
-  <testcase name="testRnaTranscriptionOfAdenineIsUracil" classname="RnaTranscriptionTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="testRnaTranscriptionOfAdenineIsUracil" classname="RnaTranscriptionTest" time="0.0"/>
+  <system-out><![CDATA[oloko 0
+84
+oloko 1
+oloko 0
+65
+67
+71
+84
+71
+71
+84
+67
+84
+84
+65
+65
+oloko 1
+oloko 0
+67
+oloko 1
+oloko 0
+71
+oloko 1
+oloko 0
+65
+oloko 1
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
