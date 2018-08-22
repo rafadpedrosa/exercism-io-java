@@ -17,4 +17,17 @@ class Gigasecond {
         return dateTime.plusSeconds(1000000000);
     }
 
+
+    // pretty solution 
+    //    private final LocalDateTime gigadate;
+    //
+    //    Gigasecond(LocalDate birthDate) {
+    //        this(birthDate.atStartOfDay());
+    //    }
+    //
+    //    Gigasecond(LocalDateTime birthDateTime) {
+    //        gigadate = birthDateTime.plusSeconds(1_000_000_000);
+    //    }
+    //
+    //    LocalDateTime getDate() { return gigadate; }
 }
