@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.stream.IntStream;
 
 class Triangle {
 
@@ -7,20 +6,18 @@ class Triangle {
 
     Triangle(double side1, double side2, double side3) throws TriangleException {
         sides = new double[]{side1, side2, side3};
-        double[][] compareMatrix = {{side1, side2, side3}, {side2, side3, side1}, {side3, side1, side2}};
 
-        this.resolveTriangle(compareMatrix);
+        this.resolveTriangle();
     }
 
-    private boolean resolveTriangle(double[][] compareMatrix) throws TriangleException {
-        boolean isSidesBiggerThanZero = Arrays.stream(this.sides, 0, 2)
-                .anyMatch(side -> side > 0);
+    private boolean resolveTriangle() throws TriangleException {
+        // saw this solution in other comments :)
+        double sumSidesTriangle = Arrays.stream(this.sides, 0, 3).sum();
 
-        boolean isTwoSidesLessThanThird = IntStream.range(0, 2)
-                .anyMatch(index -> (compareMatrix[index][0] + compareMatrix[index][1]) < compareMatrix[index][2]);
+        boolean isLegalTriangle = Arrays.stream(this.sides, 0, 3)
+                .allMatch(side -> (sumSidesTriangle - side) > side && side > 0);
 
-
-        if (!isTwoSidesLessThanThird && isSidesBiggerThanZero)
+        if (isLegalTriangle)
             return true;
         else
             throw new TriangleException();
