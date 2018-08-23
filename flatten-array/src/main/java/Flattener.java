@@ -26,4 +26,12 @@ public class Flattener {
 
         return arrays;
     }
+
+//    public List<Object> flatten(List<Object> input) {
+//        return input
+//                .stream()
+//                .flatMap(e -> e instanceof List ? new Flattener().flatten((List<Object>) e).stream() : Stream.of(e))
+//                .filter(Objects::nonNull)
+//                .collect(Collectors.toList());
+//    }
 }
