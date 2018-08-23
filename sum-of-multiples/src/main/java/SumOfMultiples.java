@@ -19,4 +19,17 @@ class SumOfMultiples {
         return IntStream.range(0, multiples.length).map(index -> multiples[index]).sum();
     }
 
+
+//    public static int sum(int limit, int[] factors) {
+//        Supplier<IntStream> factorStream =
+//                () -> Arrays.stream(factors);
+//
+//        IntPredicate isMultiple =
+//                x -> factorStream.get()
+//                        .anyMatch(factor -> x % factor == 0);
+//
+//        return IntStream.range(1, limit)
+//                .filter(isMultiple)
+//                .sum();
+//    }
 }
